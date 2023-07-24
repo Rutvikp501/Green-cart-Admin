@@ -1,0 +1,9 @@
+.categoryPage{
+    flex: 4;
+    padding: 1rem;
+}
+.addCartDiv{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
