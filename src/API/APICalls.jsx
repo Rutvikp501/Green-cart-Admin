@@ -4,7 +4,7 @@ import { ToastContainer, toast, } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addCategoryError, addCategoryRequest, addCategorySuccess, getCategoryError, getCategoryRequest, getCategorySuccess } from "../Redux/CategoryReducer/Category.action";
 import { addProductError, addProductRequest, addProductSuccess, getProductRequest } from "../Redux/ProductRedcuer/Product.action";
-const REACT_APP_BACKENDAPI="http://127.0.0.1:8080/";
+const REACT_APP_BACKENDAPI=process.env.REACT_APP_BACKENDAPI;
 export const loginFnApi = (payload) =>async(dispatch)=>{
     try {
         dispatch(loginAdminRequest())
