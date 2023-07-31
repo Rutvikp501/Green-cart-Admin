@@ -23,7 +23,6 @@ export const loginFnApi = (payload) =>async(dispatch)=>{
             })
         })
         toast.promise(
-            console.log(response),
             response,
             {
               pending: 'Hm..Let me check',
@@ -37,7 +36,6 @@ export const loginFnApi = (payload) =>async(dispatch)=>{
         )
         
     } catch (error) {
-        console.log(error)
         dispatch(loginAdminError())
         
     }
